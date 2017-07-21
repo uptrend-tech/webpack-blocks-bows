@@ -31,7 +31,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "prepublish": "npm run lint && npm test && npm run build",
+    "prepublish": "publish-please guard && npm run lint && npm test && npm run build",
     "postpublish": "git push origin master --follow-tags"
   },
   "watch": {
@@ -44,9 +44,17 @@
     "testEnvironment": "node"
   },
   "keywords": [
-    "webpack-blocks-bows"
+    "webpack-blocks-bows",
+    "webpack-blocks",
+    "bows",
+    "bows-loader",
+    "console",
+    "console.log",
+    "webpack"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "bows-loader": "^1.0.2"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
@@ -66,6 +74,7 @@
     "npm-watch": "^0.2.0",
     "opn-cli": "^3.1.0",
     "prettier": "^1.5.3",
+    "publish-please": "^2.3.1",
     "rimraf": "^2.6.1"
   }
 }
