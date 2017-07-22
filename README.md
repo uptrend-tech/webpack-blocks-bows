@@ -19,14 +19,14 @@ Or with npm:
 ## Usage
 
 ```js
-const { createConfig } = require('@webpack-blocks/webpack2')
-const babel = require('@webpack-blocks/babel6')
-const bows = require('webpack-blocks-bows)
+const { createConfig } = require('@webpack-blocks/webpack2');
+const babel = require('@webpack-blocks/babel6');
+const bows = require('webpack-blocks-bows);
 
 const config = createConfig([
   babel(),
   bows(),
-])
+]);
 ```
 
 Then, you can use the global `log(...)` in place of `console.log(...)`.
