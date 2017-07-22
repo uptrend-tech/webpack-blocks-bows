@@ -21,7 +21,7 @@ Or with npm:
 ```js
 const { createConfig } = require('@webpack-blocks/webpack2');
 const babel = require('@webpack-blocks/babel6');
-const bows = require('webpack-blocks-bows);
+const bows = require('webpack-blocks-bows');
 
 const config = createConfig([
   babel(),
