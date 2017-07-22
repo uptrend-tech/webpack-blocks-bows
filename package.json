@@ -1,6 +1,6 @@
 {
   "name": "webpack-blocks-bows",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A webpack block that injects bows (a console.log replacement) into source files.",
   "license": "MIT",
   "repository": "omt-tech/webpack-blocks-bows",
