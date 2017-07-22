@@ -2,7 +2,7 @@
 import type { Options } from './types';
 
 /**
- * Returns a webpack block that splits vendor javascript bundle.
+ * Returns a webpack block that injects bows global `log(...)` function.
  */
 const bows = (options: Options): Function => {
   const { exclude = /\/node_modules\// } = options || {};

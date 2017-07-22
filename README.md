@@ -43,7 +43,7 @@ Checkout the bows [documentation](https://www.npmjs.com/package/bows) for more d
 
 ### bows
 
-Returns a webpack block that splits vendor javascript bundle.
+Returns a webpack block that injects bows global `log(...)` function.
 
 **Parameters**
 
