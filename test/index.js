@@ -1,3 +1,5 @@
+const { createConfig } = require('@webpack-blocks/webpack2');
+
 import bows from '../src';
 
 describe('bows', () => {
@@ -59,3 +61,31 @@ describe('bows', () => {
   });
 });
 
+describe('webpack config only has one bows-loader', () => {
+  it('set one bows-loader', () => {
+    const config = createConfig([bows()]);
+    const loadersWithBows = config.module.loaders.filter(
+      rule => rule.loaders[0] === 'bows-loader'
+    );
+    expect(loadersWithBows).toHaveLength(1);
+    expect(loadersWithBows[0].loaders).toEqual(['bows-loader']);
+  });
+
+  it('set two bows-loader', () => {
+    const config = createConfig([bows(), bows()]);
+    const loadersWithBows = config.module.loaders.filter(
+      rule => rule.loaders[0] === 'bows-loader'
+    );
+    expect(loadersWithBows).toHaveLength(1);
+    expect(loadersWithBows[0].loaders).toEqual(['bows-loader']);
+  });
+
+  it('set three bows-loader', () => {
+    const config = createConfig([bows(), bows(), bows()]);
+    const loadersWithBows = config.module.loaders.filter(
+      rule => rule.loaders[0] === 'bows-loader'
+    );
+    expect(loadersWithBows).toHaveLength(1);
+    expect(loadersWithBows[0].loaders).toEqual(['bows-loader']);
+  });
+});
