@@ -2,7 +2,7 @@
 
 [![Generated with nod](https://img.shields.io/badge/generator-nod-2196F3.svg?style=flat-square)](https://github.com/diegohaz/nod)
 [![NPM version](https://img.shields.io/npm/v/webpack-blocks-bows.svg?style=flat-square)](https://npmjs.org/package/webpack-blocks-bows)
-[![Build Status](https://img.shields.io/travis/omt-tech/webpack-blocks-bows/master.svg?style=flat-square)](https://travis-ci.org/omt-tech/webpack-blocks-bows) [![Coverage Status](https://img.shields.io/codecov/c/github/omt-tech/webpack-blocks-bows/master.svg?style=flat-square)](https://codecov.io/gh/omt-tech/webpack-blocks-bows/branch/master)
+[![Build Status](https://img.shields.io/travis/omttech/webpack-blocks-bows/master.svg?style=flat-square)](https://travis-ci.org/omttech/webpack-blocks-bows) [![Coverage Status](https://img.shields.io/codecov/c/github/omttech/webpack-blocks-bows/master.svg?style=flat-square)](https://codecov.io/gh/omttech/webpack-blocks-bows/branch/master)
 
 A webpack block that injects [bows](https://www.npmjs.com/package/bows) (a console.log replacement) into source files.
 

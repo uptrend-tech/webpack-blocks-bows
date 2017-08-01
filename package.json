@@ -3,12 +3,12 @@
   "version": "0.1.4",
   "description": "A webpack block that injects bows (a console.log replacement) into source files.",
   "license": "MIT",
-  "repository": "omt-tech/webpack-blocks-bows",
+  "repository": "omttech/webpack-blocks-bows",
   "main": "index.js",
   "author": {
     "name": "Brandon Orther",
     "email": "brandon@omt.tech",
-    "url": "github.com/omt-tech"
+    "url": "github.com/omttech"
   },
   "engines": {
     "node": ">=6"
